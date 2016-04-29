@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "#### packages\nlibrary(stringr)\nlibrary(hellno)\nlibrary(dip21)\n\n#### getting started ###########################################################\n\noptions <-  dip21_search_options()\n\ntmp <-\n  dip21_search(\n    wahlperiode = 18,\n    vorgangstyp = \"Gesetz\",\n    res         = \"trefferliste\"\n  )\n\nbcont(tmp$content)\n\n\n\n\n\n\n\n",
+    "created" : 1460658496022.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2123089405",
+    "id" : "E304C786",
+    "lastKnownWriteTime" : 1461522376,
+    "last_content_update" : 1461522376770,
+    "path" : "~/Dropbox/gesetzgebungsapi/gapiworker/dev.R",
+    "project_path" : "dev.R",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

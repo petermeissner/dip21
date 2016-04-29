@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "Package: dip21\nType: Package\nTitle: R binding to DIP21 at bundestag.de\nVersion: 0.1.0\nAuthors@R: c(\n  person(\n    \"Peter\", \"Meissner\",\n    email = \"retep.meissner@gmail.com\",\n    role = c(\"aut\", \"cre\")\n  ),\n  person(\n    \"Hadley\", \"Wickham\",\n    email = \"hadley@rstudio.com\",\n    role = c(\"ctb\"),\n    comment = \"R/submit_request.R is based on rvest's submit_request\"\n  ),\n  person(\n    \"RStudio\",\n    role = \"cph\",\n    comment = \"R/submit_request.R is based on rvest's submit_request\"\n  )\n  )\nDescription: TBD\nLicense: GPL-3\nLazyData: TRUE\nImports:\n    httr (>= 1.1.0),\n    stringr (>= 1.0.0),\n    rvest (>= 0.3.1),\n    hellno\nRoxygenNote: 5.0.1\n",
+    "created" : 1461961028812.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1586019013",
+    "id" : "B39E9D7E",
+    "lastKnownWriteTime" : 1461620569,
+    "last_content_update" : 1461620569,
+    "path" : "~/Dropbox/RPackages/dip21/DESCRIPTION",
+    "project_path" : "DESCRIPTION",
+    "properties" : {
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "dcf"
+}

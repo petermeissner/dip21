@@ -1,0 +1,9 @@
+{
+    "path" : "~/Dropbox/gesetzgebungsapi/gapiworker",
+    "sortOrder" : [
+        {
+            "ascending" : true,
+            "columnIndex" : 2
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+Package: dip21
+Type: Package
+Title: R binding to DIP21 at bundestag.de
+Version: 0.1.0
+Authors@R: c(
+  person(
+    "Peter", "Meissner",
+    email = "retep.meissner@gmail.com",
+    role = c("aut", "cre")
+  ),
+  person(
+    "Hadley", "Wickham",
+    email = "hadley@rstudio.com",
+    role = c("ctb"),
+    comment = "R/submit_request.R is based on rvest's submit_request"
+  ),
+  person(
+    "RStudio",
+    role = "cph",
+    comment = "R/submit_request.R is based on rvest's submit_request"
+  )
+  )
+Description: TBD
+License: GPL-3
+LazyData: TRUE
+Imports:
+    httr (>= 1.1.0),
+    stringr (>= 1.0.0),
+    rvest (>= 0.3.1),
+    hellno
+RoxygenNote: 5.0.1

@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "\n#' parsing, filling out and sending form\n#' @export\n#' @param xml HTML/XML which contains the form. Forms will be parsed by rvest::html_form().\n#' @param base_url the base url to send form to\n#' @param submit which submit to use. See \\link{submit_request}\nsend_form <- function(xml, base_url=\"\", submit=NULL, ...){\n  # extract form information\n  form <-\n    rvest::html_form(xml)[[1]]\n\n  # filling out form\n  form <-\n    rvest::set_values(form, ...)\n\n  # preparing form request / choosing submit\n  request <-\n    submit_request(form, submit=submit)\n\n  # url\n  url <-\n    xml2::url_absolute(form$url, base_url)\n\n  # form-away / return\n  if(request$method == \"POST\"){\n    # form-away\n    tmp <-\n      httr::POST(url = url, body = request$values, encode = request$encode)\n\n    # return\n    return(tmp)\n  }else if(request$method == \"GET\"){\n    # form-away\n    tmp <-\n      httr::POST(url = url, body = request$values, encode = request$encode)\n\n    # return\n    return(tmp)\n  }else{\n    stop(\"Unknown method; \", request$method)\n  }\n}\n\n",
+    "created" : 1461184071114.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3914512756",
+    "id" : "EA794FC0",
+    "lastKnownWriteTime" : 1461184087,
+    "last_content_update" : 1461184087224,
+    "path" : "~/Dropbox/gesetzgebungsapi/gapiworker/R/tools_scraping.R",
+    "project_path" : "R/tools_scraping.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
