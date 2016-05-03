@@ -27,5 +27,7 @@ Imports:
     httr (>= 1.1.0),
     stringr (>= 1.0.0),
     rvest (>= 0.3.1),
-    hellno
+    hellno,
+    dplyr,
+    xml2
 RoxygenNote: 5.0.1
